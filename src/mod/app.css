@@ -1,0 +1,87 @@
+html, body, div.wdg-layout-stack {
+    font-family: mystery-quest;
+}
+
+@media (orientation: portrait) {
+    html { font-size: 5vw }
+}
+
+@media (orientation: landscape) {
+    html { font-size: 5vh }
+}
+
+div.wdg-layout-stack.custom > div {
+    background-color: #fff;
+    background-image: url(app/background.jpg);
+    background-position: left top;
+    background-size: cover;
+}
+
+body > div.wdg-layout-stack {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wdg-button.custom {
+    font-family: josefin-sans;
+    background-color: #8d6013;
+    color: #ffe;
+}
+
+div.theme-color-bg-B3 {
+    background-color: rgba(255,245,240,.8);
+}
+
+
+/********/
+/* LOGO */
+
+#LOGO > svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#LOGO {
+    transition: transform .3s;
+    transform-origin: right top;
+    transform: scale(.1);
+}
+
+#LOGO, #LOADING {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
+#LOGO.fullscreen {
+    transform: scale(1);
+}
+
+#LOADING {
+    display: block;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+#LOADING.fullscreen {
+    opacity: 1;
+}

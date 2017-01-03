@@ -1,0 +1,19 @@
+<div>
+    <wdg:modal id="welcome" $visible="false" $padding="true">
+        <content>
+            <center>
+                <p>Bonjour à toi qui vient visiter le <b>Musée d'Ethnographie de Genève</b> !</p>
+                <p>Comment dois-je t'appeler ?</p>
+                <x-spc h="3rem"/>
+
+                <wdg:flex>
+                    <content>
+                        <wdg:button id="btnFemale" $text="Voyageuse" $value="F" slot:action="onGender"/>
+                        <center>ou bien</center>
+                        <wdg:button id="btnMale" $text="Voyageur" $value="M" slot:action="onGender"/>
+                    </content>
+                </wdg:flex>
+            </center>
+        </content>
+    </wdg:modal>
+</div>

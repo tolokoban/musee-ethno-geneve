@@ -1,0 +1,33 @@
+<x-html title="Musée d'éthnographie de Genève" app="app">
+    <wdg:layout-stack $hash="^#([a-zA-Z0-9]+)"
+                      $value="Welcome"
+                      slot:value="onPage">
+        <content list>
+            <x-page key="Welcome" />
+            <x-page key="Intro" />
+        </content>
+    </wdg:layout-stack>
+    
+    <div id="LOADING" class="fullscreen"></div>
+    <div id="LOGO" class="fullscreen">
+        <svg preserveAspectRatio="xMidYMid"
+             viewBox="-10 -10 190 74">
+            <g stroke="none" fill="#fff">
+                <rect x="0" y="0" width="54" height="54" fill="#c6045b"/>
+                <rect x="58" y="0" width="54" height="54" fill="#6e6f74"/>
+                <rect x="116" y="0" width="54" height="54" fill="#ffc801"/>
+
+                <path d="M10,46H14V20L10,16z"/>
+                <path d="M42,46H46V8H42z"/>
+                <path d="M10,8H14L29,32L38,16V22L30,36H27z"/>
+
+                <path d="M73,8H77V46H73z"/>
+                <path d="M80,8h18v4h-18z"/>
+                <path d="M80,24h18v4h-18z"/>
+                <path d="M80,42h18v4h-18z"/>
+
+                <path d="M142,8Q128,8,128,22V32Q128,46,142,46V42Q132,42,132,36V17Q133,10,142,10"/>
+            </g>
+        </svg>
+    </div>
+</x-html>

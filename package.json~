@@ -1,0 +1,40 @@
+{
+    "name": "musee-ethno-geneve",
+    "author": "tolokoban",
+    "description": "Prototype de projet ludo-éducatif pour le MEG.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tolokoban/musee-ethno-geneve.git"
+    },
+    "homepage": "https://tolokoban.github.io/musee-ethno-geneve",
+    "license": "GPL-3.0",
+    "scripts": {
+        "test": "node node_modules/karma/bin/karma start karma.conf.js",
+        "test:dbg": "node --debug-brk node_modules/karma/bin/karma start karma.conf.js",
+        "debug": "node node_modules/toloframework/bin/tfw.js build debug test php watch",
+        "clean": "node node_modules/toloframework/bin/tfw.js clean",
+        "release": "node node_modules/toloframework/bin/tfw.js build version php clean"
+    },
+    "bugs": {
+        "url": "https://github.com/tolokoban/musee-ethno-geneve/issues"
+    },
+    "tfw": {
+        "resources": [],
+        "modules": [],
+        "compile": {
+            "type": "firefoxos",
+            "files": [ "\\.html$" ]
+        },
+        "output": "www"
+    },
+    "version": "0.0.1",
+    "reservedModules": [],
+    "dependencies": {
+        "jasmine-core": "^2.4",
+        "karma": "^0.13",
+        "karma-chrome-launcher": "^0.2",
+        "karma-firefox-launcher": "^0.1",
+        "karma-jasmine": "^0.3.6",
+        "toloframework": "^0.39"
+    }
+}
