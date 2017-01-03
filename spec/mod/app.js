@@ -1,2 +1,0 @@
-require("app",function(n,r,t){var u=function(){function r(){return u(t,arguments)}var t={fr:{}},u=n("$").intl;return r.all=t,r}();t.onPage=function(n){},r.exports._=u});
-//# sourceMappingURL=app.js.map
