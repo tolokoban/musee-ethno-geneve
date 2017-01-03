@@ -1,5 +1,13 @@
+body {
+    background-image: url(app/background.jpg);
+    background-position: left top;
+    background-size: cover;
+}
+
 html, body, div.wdg-layout-stack {
     font-family: mystery-quest;
+    color: #210;
+    text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
 }
 
 @media (orientation: portrait) {
@@ -11,10 +19,7 @@ html, body, div.wdg-layout-stack {
 }
 
 div.wdg-layout-stack.custom > div {
-    background-color: #fff;
-    background-image: url(app/background.jpg);
-    background-position: left top;
-    background-size: cover;
+    background-color: transparent;
 }
 
 body > div.wdg-layout-stack {
@@ -36,7 +41,7 @@ body > div.wdg-layout-stack {
 }
 
 div.theme-color-bg-B3 {
-    background-color: rgba(255,245,240,.8);
+    background-color: rgba(255,240,230,.8);
 }
 
 
@@ -55,9 +60,10 @@ div.theme-color-bg-B3 {
 }
 
 #LOGO {
-    transition: transform .3s;
+    transition: all .3s;
     transform-origin: right top;
-    transform: scale(.1);
+    transform: scale(0);
+    opacity: 0;
 }
 
 #LOGO, #LOADING {
@@ -73,6 +79,19 @@ div.theme-color-bg-B3 {
 
 #LOGO.fullscreen {
     transform: scale(1);
+    opacity: 1;
+}
+
+#LOGO.stick {
+    left: auto;
+    bottom: auto;
+    top: 0;
+    right: 0;
+    width: 3.16rem;
+    height: 1.23rem;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 #LOADING {

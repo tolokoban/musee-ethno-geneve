@@ -30,6 +30,8 @@ exports.onGender = function( gender ) {
 
 
 exports.start = function() {
+    if( location != '#Welcome' ) location = '#Welcome';
+
     W('welcome').visible = false;
     window.setTimeout(function() {
         var img = new Image();
@@ -39,6 +41,7 @@ exports.start = function() {
                 $.removeClass( "LOGO", "fullscreen" );
                 $.removeClass( "LOADING", "fullscreen" );
                 window.setTimeout(function() {
+                    $.addClass( "LOGO", "stick" );
                     $.detach( "LOADING" );
                     W('welcome').visible = true;
                 }, 400);

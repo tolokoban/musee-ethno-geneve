@@ -1,4 +1,4 @@
-exports.config={"name":"\"musee-ethno-geneve\"","description":"\"Prototype de projet ludo-éducatif pour le MEG.\"","author":"\"tolokoban\"","version":"\"0.0.1\"","major":"0","minor":"0","revision":"1","date":"2017-01-03T12:21:07.000Z","consts":{}};
+exports.config={"name":"\"musee-ethno-geneve\"","description":"\"Prototype de projet ludo-éducatif pour le MEG.\"","author":"\"tolokoban\"","version":"\"0.0.1\"","major":"0","minor":"0","revision":"1","date":"2017-01-03T19:23:59.000Z","consts":{}};
 var currentLang = null;
 exports.lang = function(lang) {
     if (lang === undefined) {
