@@ -39,3 +39,49 @@ div.theme-color-bg-B3 {
     background-color: rgba(255,245,240,.8);
 }
 
+
+/********/
+/* LOGO */
+
+#LOGO > svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#LOGO {
+    transition: transform .3s;
+    transform-origin: right top;
+    transform: scale(.1);
+}
+
+#LOGO, #LOADING {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
+#LOGO.fullscreen {
+    transform: scale(1);
+}
+
+#LOADING {
+    display: block;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+#LOADING.fullscreen {
+    opacity: 1;
+}

@@ -77,8 +77,8 @@ var W = require('x-widget');
                   elem: "div",
                   children: [
                     "\r\n    ",
-                                        W('wdg.modal10', 'wdg.modal', {
-                      visible: "true",
+                                        W('welcome', 'wdg.modal', {
+                      visible: "false",
                       padding: "true",
                       content: [
                       W({
@@ -103,16 +103,61 @@ var W = require('x-widget');
                               attr: {
                                 class: "x-spc H",
                                 style: "height:3rem"}}),
-                            "\r\n                \r\n                ",
-                                                        W('wdg.flex11', 'wdg.flex', {"content": [
-                                                              W('btnFemale', 'wdg.button', {"text": "Voyageuse"}),
+                            "\r\n\r\n                ",
+                                                        W('wdg.flex10', 'wdg.flex', {"content": [
+                                                              W('btnFemale', 'wdg.button', {
+                                  text: "Voyageuse",
+                                  value: "F"}),
                               W({
                                   elem: "center",
                                   children: ["ou bien"]}),
-                                                              W('btnMale', 'wdg.button', {"text": "Voyageur"})]}),
+                                                              W('btnMale', 'wdg.button', {
+                                  text: "Voyageur",
+                                  value: "M"})]}),
                             "\r\n            "]})]}),
+                    "\r\n"]}),
+                "\r\n"]}),
+          W({
+              elem: "div",
+              attr: {
+                key: "Intro",
+                class: "x-page"},
+              prop: {"$key": "Intro"},
+              children: [
+                W({
+                  elem: "div",
+                  children: [
+                    "\r\n    ",
+                    W({
+                      elem: "center",
+                      children: [
+                        "\r\n        ",
+                        W({
+                          elem: "p",
+                          children: ["Bonjour, jeune voyageur."]}),
+                        "\r\n        ",
+                        W({
+                          elem: "p",
+                          children: ["Te voici arrivé dans la collection du Musée ethnographique de Genève."]}),
+                        "\r\n        ",
+                        W({
+                          elem: "p",
+                          children: ["Ta mission est de retrouver les X objets sacrés dispersés dans la salle."]}),
+                        "\r\n        ",
+                        W({
+                          elem: "div",
+                          attr: {
+                            class: "x-spc H",
+                            style: "height:3rem"}}),
+                        "\r\n        ",
+                                                W('btnFemale', 'wdg.button', {
+                          wide: "true",
+                          text: "L'aventure commence !"}),
+                        "\r\n    "]}),
                     "\r\n"]}),
                 "\r\n"]})]})
         W.bind('wdg.layout-stack9',{"value":{"S":["onPage"]}});
+        W.bind('btnFemale',{"action":{"S":["onGender"]}});
+        W.bind('btnMale',{"action":{"S":["onGender"]}});
     }
 );
