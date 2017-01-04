@@ -16,7 +16,11 @@ var G = {
 };
 
 exports.onPage = function( id ) {
-
+    switch( id.toLowerCase() ) {
+    case 'welcome':
+        W('welcome').visible = true;
+        break;
+    }
 };
 
 exports.onGender = function( gender ) {
