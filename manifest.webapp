@@ -9,10 +9,6 @@
     "512": "/icon-512.png"
   },
   "name": "musee-ethno-geneve",
-<<<<<<< HEAD
-  "version": "0.0.3",
-=======
-  "version": "0.0.2",
->>>>>>> 79e36ce608d9a18f1249c24bb45d5d1095240a90
+  "version": "0.0.4",
   "description": "Prototype de projet ludo-éducatif pour le MEG."
 }
