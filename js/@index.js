@@ -76,7 +76,7 @@ var W = require('x-widget');
                 W({
                   elem: "div",
                   children: [
-                    "\r\n    ",
+                    "\n    ",
                                         W('welcome', 'wdg.modal', {
                       visible: "false",
                       padding: "true",
@@ -84,7 +84,7 @@ var W = require('x-widget');
                       W({
                           elem: "center",
                           children: [
-                            "\r\n                ",
+                            "\n                ",
                             W({
                               elem: "p",
                               children: [
@@ -93,19 +93,25 @@ var W = require('x-widget');
                                   elem: "b",
                                   children: ["Musée d'Ethnographie de Genève"]}),
                                 " !"]}),
-                            "\r\n                ",
+                            "\n                ",
                             W({
                               elem: "p",
                               children: ["Comment dois-je t'appeler ?"]}),
-                            "\r\n                ",
+                            "\n                ",
                             W({
                               elem: "div",
                               attr: {
                                 class: "x-spc H",
                                 style: "height:3rem"}}),
+<<<<<<< HEAD
                             "\r\n\r\n                ",
                                                         W('wdg.flex1', 'wdg.flex', {"content": [
                                                               W('wdg.button2', 'wdg.button', {
+=======
+                            "\n\n                ",
+                                                        W('wdg.flex1', 'wdg.flex', {"content": [
+                                                              W('btnFemale', 'wdg.button', {
+>>>>>>> 79e36ce608d9a18f1249c24bb45d5d1095240a90
                                   text: "Voyageuse",
                                   value: "F"}),
                               W({
@@ -114,9 +120,9 @@ var W = require('x-widget');
                                                               W('wdg.button3', 'wdg.button', {
                                   text: "Voyageur",
                                   value: "M"})]}),
-                            "\r\n            "]})]}),
-                    "\r\n"]}),
-                "\r\n"]}),
+                            "\n            "]})]}),
+                    "\n"]}),
+                "\n"]}),
           W({
               elem: "div",
               attr: {
@@ -127,28 +133,29 @@ var W = require('x-widget');
                 W({
                   elem: "div",
                   children: [
-                    "\r\n    ",
+                    "\n    ",
                     W({
                       elem: "center",
                       children: [
-                        "\r\n        ",
+                        "\n        ",
                         W({
                           elem: "p",
                           children: ["Bonjour, jeune voyageur."]}),
-                        "\r\n        ",
+                        "\n        ",
                         W({
                           elem: "p",
                           children: ["Te voici arrivé dans la collection du Musée ethnographique de Genève."]}),
-                        "\r\n        ",
+                        "\n        ",
                         W({
                           elem: "p",
                           children: ["Ta mission est de retrouver les X objets sacrés dispersés dans la salle."]}),
-                        "\r\n        ",
+                        "\n        ",
                         W({
                           elem: "div",
                           attr: {
                             class: "x-spc H",
                             style: "height:3rem"}}),
+<<<<<<< HEAD
                         "\r\n        ",
                                                 W('wdg.button4', 'wdg.button', {
                           text: "L'aventure commence !",
@@ -181,6 +188,21 @@ var W = require('x-widget');
     }
 );
 require("$",function(r,n,o){o.config={name:'"musee-ethno-geneve"',description:'"Prototype de projet ludo-éducatif pour le MEG."',author:'"tolokoban"',version:'"0.0.3"',major:"0",minor:"0",revision:"3",date:"2017-01-04T16:41:00.000Z",consts:{}};var e=null;o.lang=function(r){return void 0===r&&(window.localStorage&&(r=window.localStorage.getItem("Language")),r||(r=window.navigator.language,r||(r=window.navigator.browserLanguage,r||(r="fr"))),r=r.substr(0,2).toLowerCase()),e=r,window.localStorage&&window.localStorage.setItem("Language",r),r},o.intl=function(r,n){var e,t,a,i,g,u,l,s=r[o.lang()],c=n[0];for(l in r)break;if(!l)return c;if(!s&&(s=r[l],!s))return c;if(e=s[c],e||(s=r[l],e=s[c]),!e)return c;if(n.length>1){for(t="",g=0,a=0;a<e.length;a++)i=e.charAt(a),"$"===i?(t+=e.substring(g,a),a++,u=e.charCodeAt(a)-48,t+=u<0||u>=n.length?"$"+e.charAt(a):n[u],g=a+1):"\\"===i&&(t+=e.substring(g,a),a++,t+=e.charAt(a),g=a+1);t+=e.substr(g),e=t}return e}});
+=======
+                        "\n        ",
+                                                W('btnFemale', 'wdg.button', {
+                          wide: "true",
+                          text: "L'aventure commence !"}),
+                        "\n    "]}),
+                    "\n"]}),
+                "\n"]})]})
+        W.bind('wdg.layout-stack0',{"value":{"S":["onPage"]}});
+        W.bind('btnFemale',{"action":{"S":["onGender"]}});
+        W.bind('btnMale',{"action":{"S":["onGender"]}});
+    }
+);
+require("$",function(r,n,o){o.config={name:'"musee-ethno-geneve"',description:'"Prototype de projet ludo-éducatif pour le MEG."',author:'"tolokoban"',version:'"0.0.2"',major:"0",minor:"0",revision:"2",date:"2017-01-03T21:18:06.000Z",consts:{}};var e=null;o.lang=function(r){return void 0===r&&(window.localStorage&&(r=window.localStorage.getItem("Language")),r||(r=window.navigator.language,r||(r=window.navigator.browserLanguage,r||(r="fr"))),r=r.substr(0,2).toLowerCase()),e=r,window.localStorage&&window.localStorage.setItem("Language",r),r},o.intl=function(r,n){var e,t,a,i,g,u,l,s=r[o.lang()],c=n[0];for(l in r)break;if(!l)return c;if(!s&&(s=r[l],!s))return c;if(e=s[c],e||(s=r[l],e=s[c]),!e)return c;if(n.length>1){for(t="",g=0,a=0;a<e.length;a++)i=e.charAt(a),"$"===i?(t+=e.substring(g,a),a++,u=e.charCodeAt(a)-48,t+=u<0||u>=n.length?"$"+e.charAt(a):n[u],g=a+1):"\\"===i&&(t+=e.substring(g,a),a++,t+=e.charAt(a),g=a+1);t+=e.substr(g),e=t}return e}});
+>>>>>>> 79e36ce608d9a18f1249c24bb45d5d1095240a90
 //# sourceMappingURL=$.js.map
 require("wdg.layout-stack",function(e,n,t){var i=function(){function n(){return i(t,arguments)}var t={en:{}},i=e("$").intl;return n.all=t,n}(),a=e("dom"),o=e("tfw.data-binding"),r=e("tfw.hash-watcher"),d=function(e){var n=this,t=a.elem(this,"div","wdg-layout-stack"),i={},d=function(e,t){var i=n.hash;if(i){var a=i.exec(t);a&&(a.length<2||(n.value=a[1]))}};o.propString(this,"value")(function(e){var n,t;for(n in i)t=i[n],"function"==typeof t.element?t=t.element():"undefined"!=typeof t.element&&(t=t.element),t=t.parentNode,t&&(n==e?(a.addClass(t,"fade-in"),a.removeClass(t,"fade-out")):(a.addClass(t,"fade-out"),a.removeClass(t,"fade-in")))}),o.propRegexp(this,"hash")(function(){r(d)}),o.prop(this,"content")(function(e){if(Array.isArray(e)){var r,d={};e.forEach(function(e,n){"undefined"==typeof e.$key&&(e.$key=n),d[e.$key]=e,"undefined"==typeof r&&(e.$key=r)}),e=d,o.fire(n,"value",r)}a.clear(t);var f,l,s;for(f in e)l=e[f],"function"==typeof l.element?l=l.element():"undefined"!=typeof l.element&&(l=l.element),s=a.div([l]),"undefined"!=typeof l.$scroll&&a.addClass(s,"scroll"),a.add(t,s);i=e,o.fire(n,"value")}),o.propAddClass(this,"wide"),o.propRemoveClass(this,"visible","hide"),e=o.extend({value:"",content:{},hash:null,wide:!1,visible:!0},e,this)};n.exports=d,n.exports._=i});
 //# sourceMappingURL=wdg.layout-stack.js.map
@@ -210,7 +232,11 @@ require("wdg.icon",function(t,e,o){function i(t,e,o){if(s.clear(e),"string"==typ
 //# sourceMappingURL=wdg.icon.js.map
 require("wdg.flex",function(e,t,i){function n(e){var t=r.elem(this,"div","wdg-flex");s.propToggleClass(this,"orientation",l),s.propToggleClass(this,"type",a),s.propArray(this,"content")(function(e){r.clear(t),e.forEach(function(e){r.add(t,e),"undefined"!=typeof e.$grow&&r.css(e,{"flex-grow":parseFloat(e.$grow)}),"undefined"!=typeof e.$shrink&&r.css(e,{"flex-shrink":parseFloat(e.$shrink)})})}),s.propAddClass(this,"wide"),s.propRemoveClass(this,"visible","hide"),e=s.extend({orientation:l[0],type:a[0],content:[],wide:!0,visible:!0},e,this)}var o=function(){function t(){return n(i,arguments)}var i={en:{}},n=e("$").intl;return t.all=i,t}(),r=e("dom"),s=e("tfw.data-binding"),l=["H","V","W","N"],a=["default","fill"];t.exports=n,t.exports._=o});
 //# sourceMappingURL=wdg.flex.js.map
+<<<<<<< HEAD
 require("app",function(e,n,o){var t=function(){function n(){return t(o,arguments)}var o={fr:{}},t=e("$").intl;return n.all=o,n}();e("font.mystery-quest"),e("font.josefin");var i=e("dom"),c=e("x-widget").getById,s={gender:"M"};o.onPage=function(e){switch(e.toLowerCase()){case"welcome":c("welcome").visible=!0}},o.onGender=function(e){s.gender=e,console.info("[app] gender=...",e),c("welcome").visible=!1,window.setTimeout(function(){location="#Intro"},300)},o.start=function(){"#Welcome"!=location&&(location="#Welcome"),c("welcome").visible=!1,window.setTimeout(function(){var n=new Image;n.src="css/app/background.jpg",n.onload=function(){e("tfw.font-loader")("mystery-quest","josefin").then(function(){i.removeClass("LOGO","fullscreen"),i.removeClass("LOADING","fullscreen"),window.setTimeout(function(){i.addClass("LOGO","stick"),i.detach("LOADING"),c("welcome").visible=!0},400)})}},300)},n.exports._=t});
+=======
+require("app",function(e,n,o){var t=function(){function n(){return t(o,arguments)}var o={fr:{}},t=e("$").intl;return n.all=o,n}();e("font.mystery-quest"),e("font.josefin");var i=e("dom"),c=e("x-widget").getById,r={gender:"M"};o.onPage=function(e){},o.onGender=function(e){r.gender=e,console.info("[app] gender=...",e),c("welcome").visible=!1,window.setTimeout(function(){location="#Intro"},300)},o.start=function(){"#Welcome"!=location&&(location="#Welcome"),c("welcome").visible=!1,window.setTimeout(function(){var n=new Image;n.src="css/app/background.jpg",n.onload=function(){e("tfw.font-loader")("mystery-quest","josefin").then(function(){i.removeClass("LOGO","fullscreen"),i.removeClass("LOADING","fullscreen"),window.setTimeout(function(){i.addClass("LOGO","stick"),i.detach("LOADING"),c("welcome").visible=!0},400)})}},300)},n.exports._=t});
+>>>>>>> 79e36ce608d9a18f1249c24bb45d5d1095240a90
 //# sourceMappingURL=app.js.map
 require("tfw.font-loader",function(n,o,t){function e(n){var o=[];return n.forEach(function(n){var t=document.fonts.load('64px "'+n+'"');o.push(t)}),Promise.all(o)}function r(n){return new Promise(function(o,t){var e=[],r=document.body;n.forEach(function(n){var o=document.createElement("div");o.className="tfw-font-loader",o.style.fontFamily=n,r.appendChild(o)}),window.setTimeout(function(){e.forEach(function(n){r.removeChild(n)}),o(n)},1500)})}var f=function(){function o(){return e(t,arguments)}var t={en:{},fr:{}},e=n("$").intl;return o.all=t,o}();n("polyfill.promise"),o.exports=function(){var n=[].slice.call(arguments);return document.fonts&&"function"==typeof document.fonts.load?e(n):r(n)},o.exports._=f});
 //# sourceMappingURL=tfw.font-loader.js.map
